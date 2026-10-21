@@ -1,0 +1,129 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#F8F9FE"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:layout_weight="1">
+		<RelativeLayout
+			android:id="@+id/relativelayout3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp">
+			<LinearLayout
+				android:id="@+id/linear36"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:gravity="end"
+				android:layout_alignParentEnd="true">
+				<ImageView
+					android:id="@+id/imageview23"
+					android:layout_width="100dp"
+					android:layout_height="25dp"
+					android:src="@drawable/icon"
+					android:scaleType="fitXY" />
+				<TextView
+					android:id="@+id/textview29"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="إدارة المخازن والمبيعات"
+					android:textSize="11sp"
+					android:textColor="#94A3B8" />
+			</LinearLayout>
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview19"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="#F8FAFC"
+				app:cardElevation="0dp"
+				app:cardCornerRadius="20dp" />
+			<LinearLayout
+				android:id="@+id/linear37"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+				<ImageView
+					android:id="@+id/imageview22"
+					android:layout_width="20dp"
+					android:layout_height="20dp"
+					android:src="@drawable/icon_settings_outline"
+					android:scaleType="fitXY"
+					app:tint="#64748B" />
+			</LinearLayout>
+		</RelativeLayout>
+		<androidx.viewpager.widget.ViewPager
+			android:id="@+id/viewpager1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+		<LinearLayout
+			android:id="@+id/linear17"
+			android:layout_width="325dp"
+			android:layout_height="70dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:cardBackgroundColor="#E3F2FD"
+				app:cardElevation="0dp"
+				app:cardCornerRadius="100dp">
+				<LinearLayout
+					android:id="@+id/linear19"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:layout_margin="1dp"
+					android:background="#EAF2FA"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:weightSum="1">
+					<TextView
+						android:id="@+id/textview24"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:padding="5dp"
+						android:background="#0D467D"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="@string/text_value_1"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#FFFFFF" />
+					<TextView
+						android:id="@+id/textview26"
+						android:layout_width="100dp"
+						android:layout_height="match_parent"
+						android:padding="1dp"
+						android:background="#EAF2FA"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="المخازن"
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#0D467D" />
+					<TextView
+						android:id="@+id/textview25"
+						android:layout_width="100dp"
+						android:layout_height="match_parent"
+						android:padding="5dp"
+						android:background="#EAF2FA"
+						android:gravity="center_horizontal|center_vertical"
+						android:text="حركة البضائع "
+						android:textSize="18sp"
+						android:textStyle="bold"
+						android:textColor="#0D467D" />
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
